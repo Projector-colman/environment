@@ -20,7 +20,7 @@ spec:
         app: projector-backend
     spec:
       containers:
-      - image: cr.io/feisty-return-300415/projector-fe:2f226d3
+      - image: cr.io/feisty-return-300415/projector-fe:cbd7784
         name: projector-be
         ports:
         - containerPort: 5000
@@ -32,4 +32,3 @@ spec:
           limits:
               memory: "250Mi"
               cpu: "250m"
-              
