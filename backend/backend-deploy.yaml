@@ -20,7 +20,7 @@ spec:
         app: projector-backend
     spec:
       containers:
-      - image: gcr.io/feisty-return-300415/projector-be:57236c0
+      - image: gcr.io/feisty-return-300415/projector-be:0ccd466
         name: projector-be
         ports:
         - containerPort: 5000
