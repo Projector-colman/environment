@@ -20,7 +20,7 @@ spec:
         app: projector-frontend
     spec:
       containers:
-      - image: gcr.io/feisty-return-300415/projector-fe:cd1093e
+      - image: gcr.io/feisty-return-300415/projector-fe:30bfcdf
         name: projector-fe
         ports:
         - containerPort: 80
