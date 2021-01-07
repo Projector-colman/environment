@@ -10,7 +10,7 @@ steps:
   - '-f'
   - 'backend'
   - '-f'
-  - 'postgres'
+  - 'postgresql'
   env:
   - 'CLOUDSDK_COMPUTE_ZONE=us-central1-c'
   - 'CLOUDSDK_CONTAINER_CLUSTER=projector-test'
@@ -75,7 +75,7 @@ steps:
   - '-f'
   - 'backend'
   - '-f'
-  - 'postgres'
+  - 'postgresql'
   env:
   - 'CLOUDSDK_COMPUTE_ZONE=us-central1-c'
   - 'CLOUDSDK_CONTAINER_CLUSTER=projector'
