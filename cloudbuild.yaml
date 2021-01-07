@@ -55,6 +55,7 @@ steps:
     git fetch origin production && git checkout production && \
     git checkout $COMMIT_SHA frontend/* && \
     git checkout $COMMIT_SHA backend/* && \
+    git checkout $COMMIT_SHA cloudbuild.yaml && \
     # Commit the yaml file with a descriptive commit message
     git commit -m "Manifest from commit $COMMIT_SHA
     $(git log --format=%B -n 1 $COMMIT_SHA)" && \
