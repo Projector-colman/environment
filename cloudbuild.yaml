@@ -1,19 +1,19 @@
 steps:
 # This step deploys the new version of our container image
 # in the hello-cloudbuild Kubernetes Engine cluster - TEST
-- name: 'gcr.io/cloud-builders/kubectl'
-  id: Deploy
-  args:
-  - 'apply'
-  - '-f'
-  - 'frontend'
-  - '-f'
-  - 'backend'
-  - '-f'
-  - 'postgresql'
-  env:
-  - 'CLOUDSDK_COMPUTE_ZONE=us-central1-c'
-  - 'CLOUDSDK_CONTAINER_CLUSTER=projector-test'
+# - name: 'gcr.io/cloud-builders/kubectl'
+#   id: Deploy
+#   args:
+#   - 'apply'
+#   - '-f'
+#   - 'frontend'
+#   - '-f'
+#   - 'backend'
+#   - '-f'
+#   - 'postgresql'
+#   env:
+#   - 'CLOUDSDK_COMPUTE_ZONE=us-central1-c'
+#   - 'CLOUDSDK_CONTAINER_CLUSTER=projector-test'
 
 # Access the id_github file from Secret Manager
 - name: gcr.io/cloud-builders/gcloud
